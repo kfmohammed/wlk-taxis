@@ -1,0 +1,456 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #f0f0f0;
+    /*background-image: url('../Images/main-background.jpg');
+    background-position-x: 20%;
+    background-repeat: no-repeat;*/
+    background: url('../Images/main-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 150px; /* Height of footer*/
+}
+
+.footer {
+    position: absolute;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    color: #FFF;
+    font-size: 0.9em;
+    background-color: #4D4D4D;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 60px;
+}
+
+p {
+    color: #797979;
+}
+
+table {
+    color: #797979;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*BootStrap Overrides*/
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: none;
+}
+
+.navbar-inverse {
+    background-image: none;
+    background-color: #4D4D4D !important;
+    border-bottom: #4D4D4D;
+}
+
+.navbar-toggle {
+    padding-left: 120px;
+    margin-top: 12px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.navbar-right {
+    font-size: 11pt !important;
+    font-weight: normal !important;
+    margin-right: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.navbar-inverse .navbar-nav > li {
+    color: #fff;
+    padding: 15px;
+}
+
+    .navbar-inverse .navbar-nav > li:last-child {
+        padding-right: 0px;
+    }
+
+    .navbar-inverse .navbar-nav > li:hover, .navbar-inverse .navbar-nav > li.active {
+        color: #333 !important;
+        background: linear-gradient(#FFF, #FCCD0A);
+        cursor: pointer;
+    }
+
+        .navbar-inverse .navbar-nav > li:hover > a, .navbar-inverse .navbar-nav > li.active > a {
+            color: #333 !important;
+            text-shadow: none;
+            height: 2rem;
+            cursor: pointer;
+        }
+
+.navbar-inverse .navbar-text {
+    color: white !important;
+}
+
+.navbar-toggle {
+    padding: 6px 8px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Rockwell;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+div[id='yellowLogoBox'] {
+    padding: 0px;
+    margin: 0;
+    height: 100px;
+    font-family: Rockwell;
+    background-color: #FCCD0A;
+    color: #333;
+}
+
+div[id='mobileLogoBox'] {
+    display: none;
+    font-family: Rockwell;
+    float: left;
+    color: #FCCD0A;
+}
+
+/*************************************************************************************************
+
+    MEDIA CHANGES
+
+*************************************************************************************************/
+@media (min-width: 768px) {
+
+    .navbar > .container .navbar-brand {
+        margin-right: 40px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 2rem;
+        line-height: 1.2rem;
+    }
+
+    .navbar-inverse .navbar-text {
+        font-size: 1.8rem;
+        line-height: 1.2rem;
+    }
+
+    .footer div div, .footer div div span {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 1.4rem;
+    }
+
+    .navbar-inverse .navbar-text {
+        font-size: 1.4rem;
+    }
+
+    .navbar-brand {
+        padding-left: 120px;
+    }
+
+    .navbar-inverse .navbar-collapse {
+        margin-top: 15px;
+    }
+
+    div[id='yellowLogoBox'] {
+        display: none;
+        margin-bottom: 100px;
+    }
+
+    div[id='mobileLogoBox'] {
+        padding-left: 20px;
+        display: block;
+    }
+
+    .footer div div, .footer div div span {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        padding-left: 150px;
+    }
+
+    .footer div div, .footer div div span {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-brand {
+        padding-left: 150px;
+    }
+
+    .footer div div, .footer div div span {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1366px) {
+    .navbar-brand {
+        padding-left: 150px;
+    }
+
+    .footer div div, .footer div div span {
+        text-align: center;
+    }
+}
+
+/*************************************************************************************************
+
+    HOME PAGE
+
+*************************************************************************************************/
+.welcome-box {
+    min-height: 300px;
+    background-image: url('../Images/car-fleet.jpg');
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    opacity: 0.9;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)
+}
+
+    .welcome-box:first-child {
+        padding: 25px 5px 15px 5px;
+    }
+
+.welcome-box-text {
+    min-height: inherit;
+    background-color: #FFF;
+    opacity: 0.9;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+    .welcome-box-text b {
+        font-size: 1.1em;
+    }
+
+.welcome-box-links-box {
+    padding-top: 25px;
+    font-size: 50pt;
+}
+
+.shake-image:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+.shake-image-and-raise:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    border-radius: 7px;
+    box-shadow: 1px 2px 1px 2px #CCC;
+    color: #000 !important;
+    opacity: 1.0 !important;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-1px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(2px, 1px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 1px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-2px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(1px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -1px) rotate(-1deg);
+    }
+}
+
+#NewsSection .card {
+    min-height: 400px;
+    padding: 0;
+    margin: 0;
+    background: #FFF;
+    border-radius: 8pt;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)
+
+}
+
+#NewsSection .title-wrapper {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 0;
+    background: #FCCD0A;
+    border-radius: 10px 10px 0 0;
+}
+
+#NewsSection .title {
+    border: 1pt solid #FCCD0A;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    padding: 12px;
+    padding-left: 20px;
+    font-family: Rockwell;
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+#NewsSection .summary {
+    min-height: 350px;
+    height: 100%;
+    padding: 20px;
+    border: 1pt solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    font-size: 11pt;
+}
+
+
+#carousel {
+    text-align: center !important;
+    width: 100%;
+    margin: 50px;
+}
+
+.caroufredsel_wrapper {
+    margin: 0 70px;
+}
+
+#carousel article {
+    float: left;
+    width: 200px;
+    height: 250px;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding-right: 20px;
+}
+
+    #carousel article img {
+        width: 190px;
+    }
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-control.right {
+    background: -webkit-linear-gradient(left, TRANSPARENT, #CCC) !important;
+    width: 10%;
+}
+
+.carousel-control.left {
+    background: -webkit-linear-gradient(right, TRANSPARENT, #CCC) !important;
+    width: 10%;
+}
+
+#prev i, #next i {
+    position: absolute;
+    bottom: 20%;
+    top: 45%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#prev i {
+    left: 10%;
+}
+
+#next i {
+    right: 10%;
+}

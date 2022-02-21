@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WLK Taxi Services - 24x7 Service</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="fonts/css/fa-brands.css" rel="stylesheet" />
+    <link href="fonts/css/fa-brands.min.css" rel="stylesheet" />
+    <link href="fonts/css/fa-regular.css" rel="stylesheet" />
+    <link href="fonts/css/fa-regular.min.css" rel="stylesheet" />
+    <link href="fonts/css/fa-solid.css" rel="stylesheet" />
+    <link href="fonts/css/fa-solid.min.css" rel="stylesheet" />
+    <link href="fonts/css/fontawesome-all.css" rel="stylesheet" />
+    <link href="fonts/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="fonts/css/fontawesome.css" rel="stylesheet" />
+    <link href="fonts/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="Content/blueimp-gallery.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/blueimp-gallery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.ig_i4')
+                .click(function (event) {
+                    event = event || window.event;
+                    var link = $('.ig_i4').index(this),
+                        options = {
+                            index: link,
+                            event: event,
+                            youTubeClickToPlay: false
+                        },
+                        links = $('.ig_i4 .ig_i10').toArray();
+                    blueimp.Gallery(links, options);
+                });
+            $('.ig_i4').on({
+                'mouseenter': function () {
+                    if ($(this).find('.ig_i5').length == 0) {
+                        $(this).find('img').wrap("<div class='ig_i5'></div>");
+                        if ($(this).find('a').attr('type') == 'img') {
+                            $(this)
+                                .find('.ig_i5')
+                                .append("<div class='ig_i6'><div class='ig_i7'><i class=\"fas fa-search ig_i9\" aria-hidden=\"true\"></i></div></div>");
+                        } else {
+                            $(this)
+                                .find('.ig_i5')
+                                .append("<div class='ig_i6'><div class='ig_i7'><i class=\"fab fa-youtube ig_i9\" aria-hidden=\"true\"></i></div></div>");
+                        }
+                        var el = $(this);
+                        setTimeout(function () {
+                            el.find('.ig_i6').css('opacity', '1');
+                            el.find('.ig_i9').css('transform', 'scale(1.1)');
+                        },
+                            1);
+                    }
+                }
+            });
+            $('.ig_i4')
+                .on('mouseleave',
+                    function () {
+                        $(this).find('img').unwrap();
+                        $(this).find('.ig_i6').remove();
+                    });
+        });
+    </script>
+
+    <style type="text/css">
+        .thumbnail .caption p {
+            font-size: 0.8em;
+        }
+
+        .ig_i5 {
+            position: relative;
+        }
+
+        .ig_i6 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.48);
+            color: white;
+            font-size: 16px;
+            opacity: 0;
+            -webkit-transition: opacity 0.2s ease-in-out;
+            -moz-transition: opacity 0.2s ease-in-out;
+            -o-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .ig_i7 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .ig_i4 img {
+            width: 100%;
+            display: block;
+        }
+
+        .ig_i9 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -32px;
+            margin-top: -28px;
+            -webkit-transition: transform 0.2s ease-in-out;
+            -moz-transition: transform 0.2s ease-in-out;
+            -o-transition: transform 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out;
+            font-size: 60px;
+        }
+
+        .blueimp-gallery > .indicator > li {
+            width: 40px !important;
+            height: 30px !important;
+            border-radius: 1px !important;
+            background-size: auto 100% !important;
+            opacity: 0.8 !important;
+        }
+
+        .blueimp-gallery > .next, .blueimp-gallery > .prev {
+            width: 70px !important;
+            height: 70px !important;
+            line-height: 60px !important;
+            border-radius: 50% !important;
+            text-indent: 3px !important;
+        }
+
+        .blueimp-gallery > .prev {
+            text-indent: -3px !important;
+        }
+
+        .blueimp-gallery > .slides > .slide > .video-content > a {
+            margin: -47px auto 0 !important;
+            background-size: 110px !important;
+        }
+
+        .blueimp-gallery > .close {
+            font-size: 40px !important;
+            top: 35px !important;
+            font-weight: normal !important;
+        }
+
+        .ig_i10 img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div id="mobileLogoBox">
+                    <img src="Images/wlk-taxi-logo.png" width="50" height="50" style="margin-top: 5px;" />
+                    <h3 style="margin-top: -50px; padding-left: 60px;">WLK</h3>
+                    <h4 style="margin-top: -15px; padding-left: 60px;"><i class="fa fa-phone-square" style="font-size: 1em;transform: rotate(90deg)"></i>&nbsp;&nbsp;0756 333 2070</h4>
+                </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html" style="padding: 0; padding-top: 3px;color: white; font-size: 1em;line-height:0">
+                            <i class="fa fa-home"></i>&nbsp;&nbsp;Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html" style="padding: 0; padding-top: 3px;color: white; font-size: 1em; line-height: 0;">
+                            <i class="fa fa-suitcase"></i>&nbsp;&nbsp;Services
+                        </a>
+                    </li>
+                    <li class="active"><i class="fa fa-taxi"></i>&nbsp;&nbsp;Our Cars</li>
+                    <li>
+                        <a href="quotes.html" style="padding: 0; padding-top: 3px;color: white; font-size: 1em;line-height:0">
+                            <i class="fas fa-pound-sign"></i>&nbsp;&nbsp;Get Quotes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" style="padding: 0; padding-top: 3px; padding-right: 15px; color: white; font-size: 1em;line-height:0">
+                            <i class="fas fa-phone"></i>&nbsp;&nbsp;Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="yellowLogoBox">
+        <div class="container">
+            <img src="Images/wlk-taxi-logo.png" width="80" height="80" style="margin-top: 10px;" />
+            <h1 style="margin-top: -55px; padding-left: 100px;">WLK Taxi Services</h1>
+            <h2 class="shake-image" style="text-align: right; margin-top: -40px;">
+                <i class="fa fa-phone-square" style="color: #333; font-size: 1em;"></i> 0756 333 2070
+            </h2>
+        </div>
+    </div>
+    <div class="container" style="padding: 0;margin-top: 25px; margin-bottom: 100px;">
+        <div>
+            <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev show">‹</a>
+                <a class="next show">›</a>
+                <a class="close show">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator show"></ol>
+            </div>
+
+            <div class="col-sm-4 col-md-3">
+                <div class="thumbnail ig_i4">
+                    <a class="ig_i10" type="img" href="Images/fleet/fleet-1.jpg" title="">
+                        <img src="Images/fleet/fleet-1.jpg" alt="...">
+                    </a>
+
+                    <!--<div class="caption" style="visibility: hidden;">
+                        <h4>Original Motion Picture Soundtrack</h4>
+
+                        <p>Listen to #MorganMovie’s original score by Max Risadfchter</p>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="thumbnail ig_i4">
+                    <a class="ig_i10" type="img" href="Images/fleet/fleet-2.jpg" title="">
+                        <img src="Images/fleet/fleet-2.jpg" alt="...">
+                    </a>
+
+                    <!--<div class="caption" style="visibility: hidden;">
+                        <h4>Original Motion Picture Soundtrack</h4>
+
+                        <p>Listen to #MorganMovie’s original score by Max Risadfchter</p>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="thumbnail ig_i4">
+                    <a class="ig_i10" type="img" href="Images/fleet/fleet-3.jpg" title="">
+                        <img src="Images/fleet/fleet-3.jpg" alt="...">
+                    </a>
+
+                    <!--<div class="caption" style="visibility: hidden;">
+                        <h4>Original Motion Picture Soundtrack</h4>
+
+                        <p>Listen to #MorganMovie’s original score by Max Risadfchter</p>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="thumbnail ig_i4">
+                    <a class="ig_i10" type="img" href="Images/fleet/fleet-4.jpg" title="">
+                        <img src="Images/fleet/fleet-4.jpg" alt="...">
+                    </a>
+
+                    <!--<div class="caption" style="visibility: hidden;">
+                        <h4>Original Motion Picture Soundtrack</h4>
+
+                        <p>Listen to #MorganMovie’s original score by Max Risadfchter</p>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container" style="padding: 0px;">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="float: left;">
+                <span>&copy; 2018 - WLK Taxi Services</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="float: left;">
+                <span><i class="fa fa-external-link"></i>&nbsp;&nbsp;<a style="color: #FFF;">www.WLKTaxiServices.co.uk</a></span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="float: left;">
+                <!--<span>Designed by KM Solutions</span>-->
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" style="float: left; padding-right: 5px;">
+                <span style="text-align: right;"><i class="fab fa-facebook-square" style="font-size: 2em"></i>&nbsp;&nbsp;&nbsp;</span>
+                <span style="text-align: right;"><i class="fab fa-twitter-square" style="font-size: 2em"></i>&nbsp;&nbsp;&nbsp;</span>
+                <span style="text-align: right;"><i class="fab fa-google-plus-square" style="font-size: 2em"></i>&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

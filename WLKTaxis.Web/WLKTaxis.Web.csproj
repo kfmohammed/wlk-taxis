@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65939C56-2015-4CCB-9A6E-3ABB0E17D6C7}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLKTaxis.Web</RootNamespace>
+    <AssemblyName>WLKTaxis.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Json.4.0.20126.16343\lib\net40\System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.Formatting.4.0.20126.16343\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebApi.Core.4.0.20126.16343\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Web.Http.Common.4.0.20126.16343\lib\net40\System.Web.Http.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebApi.4.0.20126.16343\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetMvc.4.0.20126.16343\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.Web.Optimization.1.0.0-beta\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\System.Web.Providers.Core.1.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetRazor.Core.2.0.20126.16343\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyModel1.Designer.cs">
+      <DependentUpon>CompanyModel.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\CompanyDB.mdf" />
+    <Content Include="App_Data\CompanyDB_log.ldf">
+      <DependentUpon>CompanyDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="CompanyModel.edmx.diagram">
+      <DependentUpon>CompanyModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-datetimepicker.css" />
+    <Content Include="Content\bootstrap-datetimepicker.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="HTMLSite\Content\blueimp-gallery.min.css" />
+    <Content Include="HTMLSite\Content\bootstrap-datetimepicker.css" />
+    <Content Include="HTMLSite\Content\bootstrap-datetimepicker.min.css" />
+    <Content Include="HTMLSite\Content\bootstrap-theme.css" />
+    <Content Include="HTMLSite\Content\bootstrap-theme.min.css" />
+    <Content Include="HTMLSite\Content\bootstrap.css" />
+    <Content Include="HTMLSite\Content\bootstrap.min.css" />
+    <Content Include="HTMLSite\Content\lightslider.min.css" />
+    <Content Include="HTMLSite\Content\Site.css" />
+    <Content Include="HTMLSite\contact.html" />
+    <Content Include="HTMLSite\Content\video-play.svg" />
+    <Content Include="HTMLSite\Images\android-pay.png" />
+    <Content Include="HTMLSite\Images\apple-pay.png" />
+    <Content Include="HTMLSite\Images\card-solo.png" />
+    <Content Include="HTMLSite\Images\card-switch.png" />
+    <Content Include="HTMLSite\Images\fleet\fleet-1.jpg" />
+    <Content Include="HTMLSite\Images\fleet\fleet-2.jpg" />
+    <Content Include="HTMLSite\Images\fleet\fleet-3.jpg" />
+    <Content Include="HTMLSite\Images\fleet\fleet-4.jpg" />
+    <Content Include="HTMLSite\quotes.html" />
+    <Content Include="HTMLSite\Scripts\blueimp-gallery.min.js" />
+    <Content Include="HTMLSite\services.html" />
+    <Content Include="HTMLSite\fleet.html" />
+    <Content Include="HTMLSite\fonts\css\fa-brands.css" />
+    <Content Include="HTMLSite\fonts\css\fa-brands.min.css" />
+    <Content Include="HTMLSite\fonts\css\fa-regular.css" />
+    <Content Include="HTMLSite\fonts\css\fa-regular.min.css" />
+    <Content Include="HTMLSite\fonts\css\fa-solid.css" />
+    <Content Include="HTMLSite\fonts\css\fa-solid.min.css" />
+    <Content Include="HTMLSite\fonts\css\fontawesome-all.css" />
+    <Content Include="HTMLSite\fonts\css\fontawesome-all.min.css" />
+    <Content Include="HTMLSite\fonts\css\fontawesome.css" />
+    <Content Include="HTMLSite\fonts\css\fontawesome.min.css" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-brands-400.svg" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-regular-400.svg" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-solid-900.svg" />
+    <Content Include="HTMLSite\Images\car-fleet.jpg" />
+    <Content Include="HTMLSite\Images\card-american-express.png" />
+    <Content Include="HTMLSite\Images\card-discover.png" />
+    <Content Include="HTMLSite\Images\card-maestro.png" />
+    <Content Include="HTMLSite\Images\card-mastercard.png" />
+    <Content Include="HTMLSite\Images\card-paypal.png" />
+    <Content Include="HTMLSite\Images\card-visa.png" />
+    <Content Include="HTMLSite\Images\favicon.png" />
+    <Content Include="HTMLSite\Images\wlk-taxi-logo.png" />
+    <Content Include="HTMLSite\index.html" />
+    <Content Include="HTMLSite\Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="HTMLSite\Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="HTMLSite\Scripts\bootstrap.js" />
+    <Content Include="HTMLSite\Scripts\bootstrap.min.js" />
+    <Content Include="HTMLSite\fonts\less\fa-brands.less" />
+    <Content Include="HTMLSite\fonts\less\fa-regular.less" />
+    <Content Include="HTMLSite\fonts\less\fa-solid.less" />
+    <Content Include="HTMLSite\fonts\less\fontawesome.less" />
+    <Content Include="HTMLSite\fonts\less\_animated.less" />
+    <Content Include="HTMLSite\fonts\less\_bordered-pulled.less" />
+    <Content Include="HTMLSite\fonts\less\_core.less" />
+    <Content Include="HTMLSite\fonts\less\_fixed-width.less" />
+    <Content Include="HTMLSite\fonts\less\_icons.less" />
+    <Content Include="HTMLSite\fonts\less\_larger.less" />
+    <Content Include="HTMLSite\fonts\less\_list.less" />
+    <Content Include="HTMLSite\fonts\less\_mixins.less" />
+    <Content Include="HTMLSite\fonts\less\_rotated-flipped.less" />
+    <Content Include="HTMLSite\fonts\less\_screen-reader.less" />
+    <Content Include="HTMLSite\fonts\less\_stacked.less" />
+    <Content Include="HTMLSite\fonts\less\_variables.less" />
+    <Content Include="HTMLSite\fonts\scss\fa-brands.scss" />
+    <Content Include="HTMLSite\fonts\scss\fa-regular.scss" />
+    <Content Include="HTMLSite\fonts\scss\fa-solid.scss" />
+    <Content Include="HTMLSite\fonts\scss\fontawesome.scss" />
+    <Content Include="HTMLSite\fonts\scss\_animated.scss" />
+    <Content Include="HTMLSite\fonts\scss\_bordered-pulled.scss" />
+    <Content Include="HTMLSite\fonts\scss\_core.scss" />
+    <Content Include="HTMLSite\fonts\scss\_fixed-width.scss" />
+    <Content Include="HTMLSite\fonts\scss\_icons.scss" />
+    <Content Include="HTMLSite\fonts\scss\_larger.scss" />
+    <Content Include="HTMLSite\fonts\scss\_list.scss" />
+    <Content Include="HTMLSite\fonts\scss\_mixins.scss" />
+    <Content Include="HTMLSite\fonts\scss\_rotated-flipped.scss" />
+    <Content Include="HTMLSite\fonts\scss\_screen-reader.scss" />
+    <Content Include="HTMLSite\fonts\scss\_stacked.scss" />
+    <Content Include="HTMLSite\fonts\scss\_variables.scss" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-brands-400.eot" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-brands-400.ttf" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-brands-400.woff" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-brands-400.woff2" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-regular-400.eot" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-regular-400.ttf" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-regular-400.woff" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-regular-400.woff2" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-solid-900.eot" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-solid-900.ttf" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-solid-900.woff" />
+    <Content Include="HTMLSite\fonts\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="HTMLSite\Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="HTMLSite\Scripts\jquery-1.10.2.js" />
+    <Content Include="HTMLSite\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="HTMLSite\Scripts\jquery-autocomplete.js" />
+    <Content Include="HTMLSite\Scripts\jquery.signalR-2.2.3.js" />
+    <Content Include="HTMLSite\Scripts\jquery.signalR-2.2.3.min.js" />
+    <Content Include="HTMLSite\Scripts\jquery.sizzle.js" />
+    <None Include="HTMLSite\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="HTMLSite\Scripts\jquery.validate.js" />
+    <Content Include="HTMLSite\Scripts\jquery.validate.min.js" />
+    <Content Include="HTMLSite\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="HTMLSite\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="HTMLSite\Scripts\lightslider.min.js" />
+    <Content Include="HTMLSite\Scripts\Site.js" />
+    <Content Include="HTMLSite\Content\bootstrap-theme.css.map" />
+    <Content Include="HTMLSite\Content\bootstrap.css.map" />
+    <Content Include="HTMLSite\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Images\a1.png" />
+    <Content Include="Images\a2.png" />
+    <Content Include="Images\a3.png" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\b1.png" />
+    <Content Include="Images\b2.png" />
+    <Content Include="Images\b3.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\car-fleet.jpg" />
+    <Content Include="Images\card-american-express.png" />
+    <Content Include="Images\card-discover.png" />
+    <Content Include="Images\card-maestro.png" />
+    <Content Include="Images\card-mastercard.png" />
+    <Content Include="Images\card-paypal.png" />
+    <Content Include="Images\card-solo.png" />
+    <Content Include="Images\card-switch.png" />
+    <Content Include="Images\card-visa.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\favicon.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\next-b21adc94679b6404e42bfa7e9ccc7add.png" />
+    <Content Include="Images\orderedListOne.png" />
+    <Content Include="Images\orderedListThree.png" />
+    <Content Include="Images\orderedListTwo.png" />
+    <Content Include="Images\prev-50005c040da588dc6a620b8cdc34ca89.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\windowsLive.png" />
+    <Content Include="Images\wlk-taxi-logo.png" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-autocomplete.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.3.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.3.min.js" />
+    <Content Include="Scripts\jquery.sizzle.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Site.js" />
+    <Content Include="Web.config" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="CompanyModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CompanyModel1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:40684/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
